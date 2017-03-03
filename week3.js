@@ -7,8 +7,8 @@ for (let i = 0; i < subreddits.length; i++) {
         console.log(data)
         //return;
       }
-      
-      //run while loop untill a post have a "jpg" or "png" picture url
+
+      //run while loop until a post have a "jpg" or "png" picture url
       var isImage = false;
       var childPos = 1;
       while(isImage == false){
@@ -43,5 +43,5 @@ for (let i = 0; i < subreddits.length; i++) {
 
 //function to append information into display div
 function displayContent(subred, title, post, comment){
-  $('#display').append("<div class='weed'><p>"+subred+"</p><p>"+title+"</p><img src='"+post+"'><p>"+comment+"</p></div>")
+  $('.main-body').append("<div class='card-panel light blue col lighten-2 s12 l4'><p>"+subred+"</p><p>"+title+"</p><img src='"+post+"'><p>"+comment+"</p></div>")
 }
