@@ -43,5 +43,5 @@ for (let i = 0; i < subreddits.length; i++) {
 
 //function to append information into display div
 function displayContent(subred, title, post, comment){
-  $('.main-body').append("<div class='card-panel light blue col lighten-2 s12 l4'><p>"+subred+"</p><p>"+title+"</p><img src='"+post+"'><p>"+comment+"</p></div>")
+  $('.main-body').append("<div class='responsive-img card-panel light blue col lighten-2 s12 l4'><h2>"+subred+"</h2><h5>"+title+"</h5><img class='responsive-img' src='"+post+"'><p>"+comment+"</p></div>")
 }
